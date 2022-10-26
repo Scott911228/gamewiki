@@ -1,0 +1,179 @@
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+html{
+  background-image: url('../img/gamewikibackground.png');
+  animation-name: anime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  background-attachment: fixed;
+  box-sizing:border-box;
+  height:100vh;
+  width: 100vw;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+
+
+  display: none;
+}
+
+.background{
+  
+}
+
+.container{
+  max-width: 1540px;
+  max-height: 1260px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header{
+    border-top: px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-title{
+  line-height: 36px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:44px; 
+  font-weight: bold;
+  color:#f0ecf3;
+  padding-top: 30px;
+  
+}
+
+.nav{
+  display:flex;
+  justify-content: center
+  
+}
+
+
+.nav-sublist{
+
+}
+
+.nav-list-item:hover{
+  background-color:  #a787c2;
+}
+
+.nav-list-item:hover .nav-list-item-link{
+
+}
+
+.nav-list-item:hover .nav-sublist{
+
+}
+
+.nav-list{
+  width:100%;
+  box-shadow: 0 1px 1px 0px;
+  background-color: #8d4f96;
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  justify-content:baseline ;
+  align-items: center;
+}
+
+.nav-list-item{
+
+  list-style: none;
+  transition: 0.3s;
+  height: 100%;
+
+}
+
+.nav-list-link{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 24px;
+  font-weight: 1000;
+  text-decoration: none;
+  color: #edf2c5;
+}
+
+.mainpic{
+  display:flex;
+  width: auto;
+  flex-shrink: 0;
+  padding-top: 200px;
+
+}
+.mainpic img {
+  transform: scale(1);
+  transition: 0.4s;
+  margin: 0 20px;
+  border-radius: 100%;
+}
+
+.mainpic img:hover {
+  transform: scale(1.1);
+  margin: 0 25px; 
+}
+
+.mainpic div{
+  
+  width: auto;
+  height: 40vh;
+
+
+}
+
+
+.mainpic div a img{
+  width: auto;
+  height: 40vh;
+
+
+}
+
+.follow{
+
+  display:flex;
+  padding-left: 30px ;
+  padding-top: 50px;
+  justify-content:space-between;
+  
+}
+
+.follow a img{
+
+
+  transition-property: transform opacity ;
+  transition-duration: 0.2s;
+  transition-timing-function:ease-out;
+  
+
+  opacity: 0.8;
+  transform: scale(1);
+
+}
+
+.follow a img:hover{
+
+  
+  opacity: 1;
+  transform: scale(1.5);
+
+}
