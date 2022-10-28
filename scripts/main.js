@@ -1,16 +1,28 @@
-document.querySelector('.nav-list-item:nth-child(2) .nav-list-link').onclick = function() {
-    alert('Ouch! Stop poking me!');
-}
-
-let mainpic=document.querySelector('.mainpic div');
+$(document).ready(function(){
 
 
-console.log(mainpic);
-mainpic.addEventListener("wheel",function(event){
-    
+    $('.gallery_item-link ').mouseenter(function(){
 
-    event.preventDefault;
-    mainpic.scrollLeft = event.deltaY;
+        var title = $(this).parent('li').data('title');
+        var company = $(this).parent('li').data('company');
+        if(!$(this).children('div').length){
+            $(this).append('<div class="overlay"></div>');
+        }
+
+        var overlay = $(this).children('.overlay');
+
+        overlay.html('<h2>' + title + '</h2><p>' + company + '</p>');
+
+        overlay.fadeIn(500);
+    });
+
+    $('.gallery_item-link ').mouseleave(function(){
+        var overlay = $(this).children('.overlay');
+
+        overlay.fadeOut(400);
+    })
+
+
 
 
 });
