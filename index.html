@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="scripts/main.js"></script>
     <title>Gamewiki</title>
   </head>
 
@@ -60,19 +62,24 @@
       </nav>
         
       <main class="main">
+        
         <div class="mainpic">
-          <div><a href="https://wiki.biligame.com/arknights/"  target="_blank"><img src="img\arknights2.jpg"  ></a></div>
-          <div><a href="https://wiki.biligame.com/ys"  target="_blank"><img src="img\genshin2.jpg" /></a></div>
-          <div><a href="#" target="_blank" ><img src="img\4215566.webp" ></a></div>
-          <div><a href="#" target="_blank" ><img src="img\17-hi3rd-02.jpg" ></a></div>
+          <ul class="gallery row">
+            <li class="gallery_item col" data-title="明日方舟" data-company="開發商:鷹角網路">
+              <a href="https://wiki.biligame.com/arknights/" class="gallery_item-link"><img src="img\1200px-明日方舟.jpg" ></a>
+            </li>
+            <li class="gallery_item col" data-title="原神" data-company="開發商:米哈遊miHoYo">
+              <a href="https://wiki.biligame.com/ys"  class="gallery_item-link"><img src="img\genshin2.jpg" /></a>
+            </li>
+            <li class="gallery_item col" data-title="少女前線" data-company="開發商:散爆網路">
+              <a href="#" class="gallery_item-link"><img src="img\4215566.webp" ></a>
+            </li>
+            <li class="gallery_item col" data-title="崩壞3rd" data-company="開發商:米哈遊miHoYo">
+              <a href="#" class="gallery_item-link"><img src="img\17-hi3rd-02.jpg" ></a>
+            </li>
+          </ul>
         </div>
-        <div class="follow">
-          <a href="https://www.youtube.com/"  target="_blank"><img src="img/yt-icon.png" width="100" ></a>
-          <a href="https://www.instagram.com/"  target="_blank"><img src="img\Instagram_icon.png"width="100" /></a>
-          <a href="https://www.facebook.com/"  target="_blank"><img src="img\FB-Icon.png"width="100" /></a>
-          <a href="https://twitter.com/home"  target="_blank"><img src="img\Twitter-logo.png" width="100"/></a>
-          <a href="https://discord.com/"  target="_blank"><img src="img\Discord-Logo.png"width="100" /></a>
-        </div>
+
      </main> 
     </div>
 
@@ -83,6 +90,17 @@
    
 
   <footer>
+    
+    <div class="footer_title">
+      <h1>關注我們</h1>
+    </div>
 
+    <div class="follow">
+      <a href="https://www.youtube.com/"  target="_blank"><img src="img/yt-icon.png" width="100" ></a>
+      <a href="https://www.instagram.com/"  target="_blank"><img src="img\Instagram_icon.png"width="100" /></a>
+      <a href="https://www.facebook.com/"  target="_blank"><img src="img\FB-Icon.png"width="100" /></a>
+      <a href="https://twitter.com/home"  target="_blank"><img src="img\Twitter-logo.png" width="100"/></a>
+      <a href="https://discord.com/"  target="_blank"><img src="img\Discord-Logo.png"width="100" /></a>
+    </div>
   </footer>
 </html>
