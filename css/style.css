@@ -89,7 +89,7 @@ html{
 
 .nav_item:hover .nav_sublist {
   display: block;
-  width: 100%;
+  width: 120%;
 }
 
 .nav_sublist_item {
@@ -97,14 +97,15 @@ html{
   justify-content: center;
   background-color: #f2c5e8;
   color: #8a5080;
-  padding: 10px 0;
+  height:63px;
+  padding: 25px 55.5px;
   border-radius: 0;
   border-bottom: solid 1px #865388;
   transition: 0.2s linear;
 }
 
 .nav_sublist_item:hover {
-  background-color: #aa2fcf;
+  background-color: #bc94c9;
   /* color: #EDF2C5; */
 }
 
@@ -114,15 +115,18 @@ html{
   background-color: #8d4f96;
   position: relative;
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 0px 10 ;
   height: 100px;
-  justify-content:baseline ;
+  justify-content: baseline;
   align-items: center;
+ 
 }
 
 .nav_list_item{
-  
+  display: flex;
+  width:156%;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   transition: 0.3s;
   height: 100%;
