@@ -1,0 +1,303 @@
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+html{
+  background-image: url('../../imgs/img/gamewikibackground.png');
+  animation-name: anime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  background-attachment: fixed;
+  box-sizing:border-box;
+  height:100vh;
+  width: 100vw;
+
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+
+
+  display: none;
+}
+
+.container{
+  max-width: 1540px;
+  max-height: 1260px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header_title{
+  line-height: 36px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:44px; 
+  font-weight: bold;
+  color:#f0ecf3;
+  padding-top: 30px;
+  
+}
+
+.nav{
+  display:flex;
+  justify-content: center
+  
+}
+
+.nav_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 15%;
+  transition: 0.2s linear;
+}
+
+
+.nav_sublist{
+  position: absolute;
+  display: none;
+  top: 100%;
+  padding-top: 4px;
+}
+
+.nav_sublist:hover{
+    display: block;
+}
+
+.nav_list_item:hover{
+  background-color:  #a787c2;
+}
+
+.nav_item:hover .nav_sublist {
+  display: block;
+  width: 100%;
+}
+
+.nav_sublist_item {
+  display: flex;
+  justify-content: center;
+  background-color: #f2c5e8;
+  color: #8a5080;
+  padding: 10px 0;
+  border-radius: 0;
+  border-bottom: solid 1px #865388;
+  transition: 0.2s linear;
+}
+
+.nav_sublist_item:hover {
+  background-color: #aa2fcf;
+  /* color: #EDF2C5; */
+}
+
+.nav_list{
+  width:100%;
+  box-shadow: 0 1px 1px 0px;
+  background-color: #8d4f96;
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  justify-content:center ;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav_list_item{
+  display: flex;
+  justify-content: center;
+  width: 156px;
+  list-style: none;
+  transition: 0.3s;
+  height: 100%;
+
+}
+
+.nav_list_item:hover .nav_sublist{
+   display :block;
+
+}
+
+.nav_list_link{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 24px;
+  font-weight: 1000;
+  text-decoration: none;
+  color: #edf2c5;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.search-bar{
+  height: 40px;
+  width: 450px;
+}
+
+.search-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 40px;
+  position: absolute;
+  outline: none;
+  cursor: pointer; 
+  top: 0;
+  right: 0; 
+  padding: 0;
+}
+
+
+.search{
+  position: relative;
+  float: left;
+}
+
+.main_title {
+  display: flex;
+  justify-content: center;
+}
+
+.main_title h1{
+  color: rgba(247, 248, 248, 0.9);
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.mainpic{
+  display:flex;
+  flex-shrink: 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100%/2);
+}
+
+.gallery{
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 10px 20px 10px;
+}
+
+.gallery_item-link{
+  position: relative;
+  display: block;
+}
+
+.mainpic img{
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  border-radius: 3%;
+}
+
+.mainpic img:hover {
+  opacity: 0.8;
+  margin: 0 25px; 
+}
+
+.overlay {
+  box-sizing: border-box;
+  display: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: #d1cbd4;
+  position:absolute;
+  bottom: 0;
+  left: 5px;
+  height: 30%;
+  width: 100%;
+  padding: 10px;
+  margin: 0 20px;
+  pointer-events: none;
+  border-radius: 3.5%;
+}
+
+.overlay:hover {
+  margin: 0 25px;
+}
+
+.overlay h2 {
+  font-family: Arial;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: rgba(48, 47, 47, 0.9);
+}
+
+.footer_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 0 auto;
+  margin-left: 20px;
+}
+
+.footer_title h1 {
+  color: rgba(213, 207, 215, 0.8);
+}
+
+.follow{
+  display:flex;
+  padding-left: 30px ;
+  padding-top: 10px;
+  margin: 0 100px;
+  justify-content:space-around;
+  
+}
+
+.follow a img{
+
+  transition-property: transform opacity ;
+  transition-duration: 0.2s;
+  transition-timing-function:ease-out;
+  
+
+  opacity: 0.9;
+  transform: scale(0.8);
+
+}
+
+.follow a img:hover{
+
+  
+  opacity: 1;
+  transform: scale(1);
+
+}
