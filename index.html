@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/css/style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="js/main.js"></script>
     <title>Gamewiki</title>
   </head>
 
@@ -19,11 +19,11 @@
  
         <ul class="nav_list">
            <li class="nav_list_item">
-             <a href="#" class="nav_list_link">遊戲</a>
+             <a href="#" class="nav_list_link">熱門遊戲</a>
              <div class="nav_sublist">
               <a href="arknights.html" class="nav_sublist_item">明日方舟</a>
-              <a href="#" class="nav_sublist_item">原神</a>
-              <a href="#" class="nav_sublist_item">少女前線</a>
+              <a href="genshin.html" class="nav_sublist_item">原神</a>
+              <a href="#" class="nav_sublist_item">sample</a>
           </div>
            </li>
            <li class="nav_list_item">
@@ -62,28 +62,38 @@
       </nav>
         
       <main class="main">
-        
+
+        <li class="wrap">
+          <div class="search">
+              <input class="search-bar" type="text" placeholder="查詢你感興趣的遊戲...">
+              <button class="search-btn"><img src="imgs/img3/computer-icons-search-box-button-clip-art-png-favpng-7TdWywgFBhJ2y81D9kE6nhjbT.jpg" style="width: 25px; height: 25px;"></button>
+          </div>
+      </li>
+
+        <div class="main_title">
+          <h1>人氣查詢</h1>
+        </div>
+
         <div class="mainpic">
+
           <ul class="gallery row">
             <li class="gallery_item col" data-title="明日方舟" data-company="開發商:鷹角網路">
-              <a href="arknights.html" class="gallery_item-link"><img src="img\1200px-明日方舟_黎明前奏先导视觉图.jpg" ></a>
+              <a href="arknights.html" class="gallery_item-link"><img src="imgs\img\1200px-明日方舟.jpg" ></a>
             </li>
             <li class="gallery_item col" data-title="原神" data-company="開發商:米哈遊miHoYo">
-              <a href="https://wiki.biligame.com/ys"  class="gallery_item-link"><img src="img\genshin2.jpg" /></a>
+              <a href="genshin.html"  class="gallery_item-link"><img src="imgs\img\genshin2.jpg" /></a>
             </li>
             <li class="gallery_item col" data-title="少女前線" data-company="開發商:散爆網路">
-              <a href="#" class="gallery_item-link"><img src="img\4215566.webp" ></a>
+              <a href="#" class="gallery_item-link"><img src="imgs\img\4215566.webp" ></a>
             </li>
             <li class="gallery_item col" data-title="崩壞3rd" data-company="開發商:米哈遊miHoYo">
-              <a href="#" class="gallery_item-link"><img src="img\17-hi3rd-02.jpg" ></a>
+              <a href="#" class="gallery_item-link"><img src="imgs\img\17-hi3rd-02.jpg" ></a>
             </li>
           </ul>
         </div>
 
      </main> 
     </div>
-
-    <script src="scripts/main.js"></script>
   
   </body>
 
@@ -96,11 +106,11 @@
     </div>
 
     <div class="follow">
-      <a href="https://www.youtube.com/"  target="_blank"><img src="img/yt-icon.png" width="100" ></a>
-      <a href="https://www.instagram.com/"  target="_blank"><img src="img\Instagram_icon.png"width="100" /></a>
-      <a href="https://www.facebook.com/"  target="_blank"><img src="img\FB-Icon.png"width="100" /></a>
-      <a href="https://twitter.com/home"  target="_blank"><img src="img\Twitter-logo.png" width="100"/></a>
-      <a href="https://discord.com/"  target="_blank"><img src="img\Discord-Logo.png"width="100" /></a>
+      <a href="https://www.youtube.com/"  target="_blank"><img src="imgs\img\yt-icon.png" width="100" ></a>
+      <a href="https://www.instagram.com/"  target="_blank"><img src="imgs\img\Instagram_icon.png"width="100" /></a>
+      <a href="https://www.facebook.com/"  target="_blank"><img src="imgs\img\FB-Icon.png"width="100" /></a>
+      <a href="https://twitter.com/home"  target="_blank"><img src="imgs\img\Twitter-logo.png" width="100"/></a>
+      <a href="https://discord.com/"  target="_blank"><img src="imgs\img\Discord-Logo.png"width="100" /></a>
     </div>
   </footer>
 </html>

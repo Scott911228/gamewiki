@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="css/arknights.css" rel="stylesheet" type="text/css">
+        <link href="css/css2/arknights.css" rel="stylesheet" type="text/css">
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <title>Arknights</title>
      </head>
-
+ 
     <body>
         <div class="arkscontainer">
             <header class="header">
@@ -15,9 +16,6 @@
 
             <nav class="nav2">
                 <ul class="nav2_list">
-                    <li class="nav2_list_item">
-                      <a href="arknights.html" class="nav2_list_link">首頁</a>
-                    </li>
                     <li class="nav2_list_item">
                      <a href="#" class="nav2_list_link">幹員圖鑑</a>
                    </li>
@@ -30,29 +28,44 @@
                    <li class="nav2_list_item">
                       <a href="#" class="nav2_list_link">集成戰略</a>
                    </li>
-                     
+                   <li class="nav2_list_item">
+                      <a href="index.html" class="nav2_list_link">回首頁</a>
+                   </li>
                   </ul>
             </nav>
+
+
+            <div class="intro">
+              <h2>歡迎使用明日方舟wiki!</h2>
+              <h3>明日方舟是由鷹角網路所開發的一款塔防手機遊戲</h3>
+              <h3>著重於角色蒐集、編隊與養成，更加繁複的地形以及地圖物件要素。</h3>
+              <h3>玩家須將這些幹員放置於適當的位置，攔截從侵入點進攻的敵人，避免他們進入保護目標。</h3>
+            </div>
+
+             
             <main class="main2">
                 <div class="mainpic2">
                   <ul class="gallery2 row2">
-                    <li class="gallery2_item col2" data-title="幹員" >
-                      <a href="#" class="gallery2_item-link"><img src="img2\幹員.jpg" ></a>
+                    <li class="gallery2_item col2" data-title="幹員"data-content="角色圖鑑 培養素材 技能 故事 語音" >
+                      <a href="#" class="gallery2_item-link"><img src="imgs\img2\幹員.jpg" ></a>
                     </li>
-                    <li class="gallery2_item col2" data-title="關卡" >
-                      <a href="#" class="gallery2_item-link"><img src="img2\關卡.jpg" ></a>
+                    <li class="gallery2_item col2" data-title="關卡"data-content="主線 活動 資源收集 剿滅作戰 "  >
+                      <a href="#" class="gallery2_item-link"><img src="imgs\img2\關卡.jpg" ></a>
                     </li>
-                    <li class="gallery2_item col2" data-title="素材掉率">
-                      <a href="#" class="gallery2_item-link"><img src="img2\素材掉率.jpg" ></a>
+                    <li class="gallery2_item col2" data-title="素材掉率"data-content="為您分析素材掉率最高的關卡" >         
+                      <a href="#" class="gallery2_item-link"><img src="imgs\img2\素材掉率.jpg" ></a>
                     </li>
-                    <li class="gallery2_item col2" data-title="集成戰略">
-                      <a href="#" class="gallery2_item-link"><img src="img2\集成戰略.jpg" ></a>
+                    <li class="gallery2_item col2" data-title="集成戰略"data-content="全新的rogue like地城模式!" >
+                      <a href="#" class="gallery2_item-link"><img src="imgs\img2\集成戰略.jpg" ></a>
                     </li>
                 </ul>
                 </div>
              </main> 
-
+             <footer class="footer">
+              <p>Designed by Taihen for Mid-term project</p> 
+          </footer>
         </div>
+        <script src="js/arknights.js"></script>
     </body>
 
 
