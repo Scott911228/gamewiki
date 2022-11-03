@@ -1,10 +1,10 @@
 @keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
 }
 html{
     background-image: url('../../imgs/img3/background.jpg');
