@@ -1,6 +1,19 @@
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 html{
     background-image: url('../../imgs/img3/background.jpg');
     background-repeat: no-repeat;
+    animation-name: anime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    background-attachment: fixed;
+    box-sizing:border-box;
     max-height: 2000px;
     width: 100vw;
 }
