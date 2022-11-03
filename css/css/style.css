@@ -9,6 +9,7 @@
 
 html{
   background-image: url('../../imgs/img/gamewikibackground.png');
+  background-repeat: no-repeat;
   animation-name: anime;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
@@ -31,7 +32,7 @@ html{
 
 .container{
   max-width: 1540px;
-  max-height: 1260px;
+  max-height: 1360px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -224,6 +225,7 @@ html{
   display: block;
   transition: 0.4s;
   border-radius: 3%;
+
 }
 
 .mainpic img:hover {
