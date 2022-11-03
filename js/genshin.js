@@ -12,6 +12,19 @@ $(document).ready(function () {
         }
     })
 
-
+    $('.new-pic').click(function(){
+        if(dis == false) {
+            dis = true;
+            $('.event ').fadeIn(500);
+            $('.horizontal-line').fadeIn(500);
+            $('.newcharacter').fadeIn(500);
+        }
+        else {
+            dis =false;
+            $('.event ').fadeOut(500);
+            $('.horizontal-line').fadeOut(500);
+            $('.newcharacter').fadeOut(500);
+        }
+    })
 
 })
