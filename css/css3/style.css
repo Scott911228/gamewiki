@@ -5,15 +5,18 @@
     100%{
       opacity: 1;
     }
-}
+  }
+
 html{
     background-image: url('../../imgs/img3/background.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     animation-name: anime;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    max-height: 2000px;
+    /* max-height: 2000px; */
     width: 100vw;
+    line-height: 1.5;
 }
 
 * {
@@ -76,7 +79,7 @@ html{
 
 .wrap{
     width: 20%;
-    margin: auto 20px auto 450px;
+    margin: auto 20px auto 520px;
 }
 
 .search-bar{
@@ -162,14 +165,32 @@ html{
 
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgb(53, 51, 51, 0.6);
 }  
 
-.leftside-bar{
-    width: 50%;
+.tools {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
     color: rgb(205, 210, 206);
+}
+
+.new_ver {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    color: rgb(205, 210, 206);
+}
+
+.leftside-bar{
+    color: rgb(205, 210, 206);
+    /* display: ; */
 }
 
 .new-title{
@@ -180,10 +201,14 @@ html{
 .new-pic{
     display: flex;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 .new-pic img{
     border-radius: 3%;
     border: 2px rgb(244, 248, 244) solid;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .new-pic a{
@@ -196,20 +221,38 @@ html{
 }
 
 .event{
-    margin-left: 20px;
+    display: none;
+}
+
+#this{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.event-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .event-title{
+    display: flex;
+    justify-content: center;
     margin-bottom: -20px;
 }
 
 .event-content img{
+    width: 80%;
     margin-top: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    margin-left: 90px;
+    border-radius: 5px;
 }
 
 .event-content p{
+    width: 80%;
+    margin-left: 90px;
     font-weight: 800;
 }
 
@@ -217,15 +260,14 @@ html{
     width: 100%;
     height: 2px;
     background-color: white;
+    display: none;
 }
 
 .newcharacter{
-    margin-left: 20px;
+    display: none;
 }
 
 .newcharacter-pic img{
-    margin-left: -15PX;
-    margin-top: -10px;
     border-radius: 3px;
 }
 
@@ -235,18 +277,15 @@ html{
     align-items:flex-start;
 }
 
-.newcharacter-intro{
-    margin-top: -30px;
-    
-}
-
-.newcharacter-intro h3{
+.newcharacter-title h3{
     font-size: 1.5rem;
+    margin-left: 20px;
 }
 
 .newcharacter-intro p{
     font-size: 1.2rem;
     font-weight: 800;
+    margin-left: 20px;
 }
 
 .newcharacter-intro a{
@@ -268,17 +307,10 @@ html{
 .character-title{
     display: flex;
     justify-content: center;
-}
-
-.character-pic{
-    display: flex;
-    justify-content: center;
-    margin-top: -15px;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
 .character-pic img{
-    height: 85%;
     border-radius: 50%;
     border: 2px white solid;
 }
@@ -286,22 +318,16 @@ html{
 .character-pic a{
     border-radius: 50%;
     transition: 0.4s;
-    margin-bottom: -40px;
 }
 
 .character-pic a:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
-.material-title{
-    margin-top: 30px;
-}
-
-.material-pic{
+.material {
     display: flex;
-    justify-content: center;
-    margin-top: -15px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .material-pic img{
@@ -316,21 +342,16 @@ html{
 }
 
 .material-pic a:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
-.map-title{
-    margin-top: 30px;
-}
-
-.map-pic{
+.map{
     display: flex;
-    justify-content: center;
-    margin-top: -15px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .map-pic img{
-    height: 92%;
     border-radius: 50%;
     transition: 0.4s;
     border: 2px white solid;
@@ -342,11 +363,10 @@ html{
 }
 
 .map-pic a:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .rightside-bar a{
-    margin-top: 20px;
     color: rgb(205, 210, 206);
 }
 
