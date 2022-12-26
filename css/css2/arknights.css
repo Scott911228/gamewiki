@@ -175,7 +175,7 @@ html{
     bottom: 0;
     left: 0px;
     height: 30%;
-    width: 97.5%;
+    width: 45.5vw;
     padding: 10px;
     margin: 0 20px;
     pointer-events: none;
@@ -231,6 +231,7 @@ html{
  
   .overlay{
     margin:auto;
+    width:81vw;
   }
 
 
