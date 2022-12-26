@@ -3,8 +3,8 @@ $(document).ready(function(){
 
     $('.operator1_item_link').mouseenter(function(){
 
-        var title = $(this).parent('li').data('title');
-        var content = $(this).parent('li').data('content');
+        var title = $(this).parent('div').data('title');
+        var content = $(this).parent('div').data('content');
         if(!$(this).children('div').length){
             $(this).append('<div class="overlay"></div>');
         }
