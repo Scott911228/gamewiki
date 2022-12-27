@@ -125,7 +125,7 @@ html{
   }
   
   .mainpic2 img{
-    width: 700px;
+    width: 100%;
     display: block;
     transition: 0.4s;
     border-radius: 3%;
@@ -175,7 +175,7 @@ html{
     bottom: 0;
     left: 0px;
     height: 30%;
-    width: 45.5vw;
+    width: 74%;
     padding: 10px;
     margin: 0 20px;
     pointer-events: none;
@@ -290,7 +290,11 @@ html{
 
     
     }
-
+    
+    .mainpic2 img{
+      width:370px;
+    }
+   
     .footer{
       border-radius: 10px;
       display: flex;
@@ -299,7 +303,7 @@ html{
       background-color: rgb(34, 34, 34);
       height: 100px;
       margin: 10px 31px;
-      width:83%;
+      width:84%;
   }
 
    }
