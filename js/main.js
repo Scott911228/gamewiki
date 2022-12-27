@@ -22,7 +22,17 @@ $(document).ready(function(){
         overlay.fadeOut(400);
     })
 
-
-
-
+    let dis = false
+    $('.nav_menu').click(function(){
+        if(dis == false) {
+            dis = true;
+            $('.nav_list').slideDown(500);
+        }
+        else {
+            dis =false;
+            $('.nav_list').slideUp(500);
+            
+        }
+    })
 });
+
