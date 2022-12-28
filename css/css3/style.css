@@ -11,6 +11,7 @@ html{
     background-image: url('../../imgs/img3/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
     animation-name: anime;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -27,6 +28,7 @@ html{
 
 .top-area {
     display: flex;
+    position: relative;
     align-items: center;
     margin-top: 20px;
     margin-left: 10px;
@@ -43,15 +45,24 @@ html{
 }
 
 .icon{
+    position: absolute;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    right: 30px;
 }
 
 .back{
     display: flex;
     align-items: center;
+    margin-right: 20px;
     margin-bottom: -50px;
-    margin-left: 25px;
+}
+
+.home-pic img {
+    width: 50px;
+    height: 50px;
 }
 
 .back-home{
@@ -65,7 +76,6 @@ html{
     display: flex;
     align-items: center;
     margin-bottom: -50px;
-    margin-left: 25px;
 }
 
 .contact-us{
@@ -74,22 +84,25 @@ html{
 }
 
 .contact-pic img{
+    width: 30px;
+    height: 30px;
     opacity: 0.7;
 }
 
 .wrap{
+    position: absolute;
     width: 20%;
-    margin: auto 20px auto 520px;
+    right: 20px;  
+    top: 25px; 
 }
 
 .search-bar{
     height: 30px;
-    width: 300px;
+    width: 100%;
 }
 
 .search-btn{
-    display: flex;
-    justify-content: baseline;
+    
     width: 32px;
     height: 30px;
     position: absolute;
@@ -103,16 +116,23 @@ html{
 
 .search{
     position: relative;
-    float: left;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both
 }
 
 .nav-list{
+    position: relative;
     width: 100%;
     display: flex;
     list-style: none;
     background-color: rgb(44, 43, 43);
     padding: 0;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 .nav-list-item a{
@@ -159,6 +179,10 @@ html{
     display: none;
 }
 
+.introduction-sublist h3 {
+    color: rgb(15, 15, 15);
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -173,6 +197,82 @@ html{
     width: 100%;
     color: rgb(205, 210, 206);
 }
+
+.character {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-pic img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+.character-pic a{
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.character-pic a:hover{
+    opacity: 0.5;
+}
+
+.material {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-pic img{
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+    border: 2px black solid;
+}
+
+.material-pic a{
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.material-pic a:hover{
+    opacity: 0.5;
+}
+
+.map{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-pic img{
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+    border: 2px white solid;
+}
+
+.map-pic a{
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.map-pic a:hover{
+    opacity: 0.5;
+}
+
 
 .new_ver {
     display: flex;
@@ -225,6 +325,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .event-title{
@@ -233,26 +334,25 @@ html{
 }
 
 .event-content img{
-    width: 80%;
+    width: 100%;
     margin-top: 5px;
-    margin-left: 90px;
     border-radius: 5px;
 }
 
 .event-content p{
-    width: 80%;
-    margin-left: 90px;
+    width: 100%;
     font-weight: 800;
 }
 
 .horizontal-line{
     width: 100%;
     height: 2px;
+    margin-top: -10px;
     background-color: white;
     display: none;
 }
 
-.newcharacter{
+/* .newcharacter{
     display: none;
 }
 
@@ -283,69 +383,7 @@ html{
 
 .newcharacter-intro a:hover{
     text-decoration: underline;
-}
-
-.character-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.character-pic img{
-    border-radius: 50%;
-    border: 2px white solid;
-}
-
-.character-pic a{
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-.character-pic a:hover{
-    opacity: 0.5;
-}
-
-.material {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.material-pic img{
-    border-radius: 50%;
-    transition: 0.4s;
-    border: 2px black solid;
-}
-
-.material-pic a{
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-.material-pic a:hover{
-    opacity: 0.5;
-}
-
-.map{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.map-pic img{
-    border-radius: 50%;
-    transition: 0.4s;
-    border: 2px white solid;
-}
-
-.map-pic a{
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-.map-pic a:hover{
-    opacity: 0.5;
-}
+} */
 
 .rightside-bar a{
     color: rgb(205, 210, 206);
