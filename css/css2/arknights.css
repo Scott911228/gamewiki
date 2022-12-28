@@ -215,18 +215,16 @@ html{
   .col2{
     padding-top: 20px;
     padding-left: 0px;
-    padding-right: 300px;
     width: 85%;
   
   }
   .mainpic2 img{
-    width:200%;
+    width:85vw;
     align-items: center;
   }
 
   .mainpic2 img:hover{
       margin:auto;
-      width:210%;
   }
  
   .overlay{
