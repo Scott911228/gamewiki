@@ -260,6 +260,10 @@ html {
     margin-top: 250px;
     flex-wrap: wrap;
   }
+  .operator_container{
+   margin-top: -200px;
+  
+  }
 
   .operator1_content {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
