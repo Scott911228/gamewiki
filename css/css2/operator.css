@@ -232,7 +232,13 @@ html {
   .mobile {
     display: block
   }
-
+  
+  html{
+    background-image: url('../../imgs/img2/phone.jpg');
+    background-size: 700px;
+    background-position: -80px -200px;
+    
+  }
   .nav2 {
     width: 100%;
     height: 400px;
