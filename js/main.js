@@ -2,13 +2,6 @@ $(document).ready(function(){
 
     var screenWidth = screen.width;
 
-    if(screenWidth>480) {
-        $('.nav').addClass('.show');
-    } else {
-        $('.nav').removeClass('.show');
-    }
-
-
     $('.gallery_item-link ').mouseenter(function(){
 
         var title = $(this).parent('li').data('title');
