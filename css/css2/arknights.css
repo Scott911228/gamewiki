@@ -199,6 +199,12 @@ html{
 
 @media (max-width:768px){
 
+
+  html{
+      background-size: 4000px;
+      background-position: -300px -220px;
+      
+    }
   .nav2_list_link{
     font-size:2.6vw;
   }
